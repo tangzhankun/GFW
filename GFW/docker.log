@@ -1,0 +1,82 @@
+    1  clear
+    2  exit
+    3  passwd
+    4  git 
+    5  apt-get update
+    6  clear
+    7  apt-get install git
+    8  git clone https://github.com/tangzhankun/GFW.git
+    9  ls
+   10  cd GFW
+   11  git checkout GFW
+   12  ls
+   13  cd GFW
+   14  ls
+   15  cat start_vpnserver.sh 
+   16  cp pptp -r /root/
+   17  cd /root
+   18  ls
+   19  apt-get install openssh-server
+   20  apt-get install docker.io
+   21  apt-get install docker-engine
+   22  apt-get remove docker docker-engine docker.io
+   23  apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
+   24  clear
+   25  vi /etc/ssh/sshd_config 
+   26  clear
+   27  apt-get install vim -y
+   28  apt-get install -y vim
+   29  vim /etc/ssh/sshd_config 
+   30  apt-get install vim
+   31  clear
+   32  vim /etc/ssh/sshd_config 
+   33  clear
+   34  service sshd restart
+   35  ps axu|grep sshd
+   36  service ssh restart
+   37  ps aux|grep sshd
+   38  apt-get install apt-transport-https ca-certificates curl software-properties-common
+   39  clear
+   40  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   41  apt-key fingerprint 0EBFCD88
+   42  uname -a
+   43  cat /proc/cpuinfo 
+   44  clear
+   45  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+   46  apt-get update
+   47  apt-get install docker-ce
+   48  clear
+   49  ls
+   50  cp GFW/GFW/start_vpnserver.sh ./
+   51  ls
+   52  vim GFW/GFW/run-ocserv.sh 
+   53  clear
+   54  ls
+   55  vim start_vpnserver.sh 
+   56  clear
+   57  ls
+   58  ./start_vpnserver.sh 
+   59  clear
+   60  docker ps
+   61  ipconfig
+   62  ifconfig
+   63  clear
+   64  ping baidu.com
+   65  ping www.baidu.com
+   66  ping www.google.com
+   67  clear
+   68  ping 101.80.72.1
+   69  ping 101.132.68.164
+   70  iptables
+   71  iptables -L
+   72  clear
+   73  ufw disable 
+   74  ssh 101.132.68.164
+   75  ping 101.132.68.164
+   76  passwd
+   77  ssh tzkgw-jp2
+   78  ssh 45.77.133.209
+   79  exit
+   80  history 
+   81  ls
+   82  history > docker.log
