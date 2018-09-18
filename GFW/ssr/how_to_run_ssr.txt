@@ -1,0 +1,22 @@
+docker run -d -p 80:80 --name=ssr jaegerdocker/ss-r
+docker exec -ti ssr /bin/bash
+edit /etc/shadowsocksR.json
+{
+    "server":"0.0.0.0",
+    "server_ipv6":"::",
+    "server_port":80,
+    "local_address":"127.0.0.1",
+    "local_port":1080,
+    "password":"woaiyixi",
+    "timeout":120,
+    "method":"aes-256-cfb",
+    "protocol":"origin",
+    "protocol_param":"",
+    "obfs":"plain",
+    "obfs_param":"",
+    "redirect":"",
+    "dns_ipv6":false,
+    "fast_open":false,
+    "workers":1
+}
+docker restart ssr
