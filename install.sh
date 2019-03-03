@@ -5,4 +5,4 @@ echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 sysctl -p
 lsmod | grep bbr
 # choose encryption:none, protocol:auth_chain_a, obfs:plain
-./ssr.sh
+./gfw.sh
